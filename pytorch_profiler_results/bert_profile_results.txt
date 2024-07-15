@@ -1,0 +1,228 @@
+BERT RESULTS FOR onlinefoods.csv
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                       Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg       CPU Mem  Self CPU Mem      CUDA Mem  Self CUDA Mem    # of Calls  
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                            model_inference        74.84%     945.403ms       100.00%        1.263s        1.263s     923.627ms        73.11%        1.263s        1.263s           0 b    -365.48 Mb       8.12 Mb    -458.38 Mb             1  
+                                aten::copy_        12.27%     155.004ms        12.27%     155.004ms     374.406us     141.967ms        11.24%     141.967ms     342.915us           0 b           0 b           0 b           0 b           414  
+                                   aten::to         0.15%       1.848ms         5.48%      69.260ms     168.516us       4.056ms         0.32%      71.754ms     174.584us           0 b           0 b     418.73 Mb           0 b           411  
+                             aten::_to_copy         0.36%       4.488ms         5.34%      67.412ms     332.079us       4.354ms         0.34%      67.698ms     333.488us           0 b           0 b     418.73 Mb       4.51 Mb           203  
+                               aten::linear         0.22%       2.833ms         2.76%      34.852ms     477.425us       1.351ms         0.11%      36.180ms     495.616us           0 b           0 b      23.95 Mb           0 b            73  
+                                aten::addmm         2.24%      28.292ms         2.35%      29.650ms     406.164us      30.159ms         2.39%      31.699ms     434.233us           0 b           0 b      23.95 Mb      23.95 Mb            73  
+                               aten::detach         1.52%      19.222ms         1.56%      19.712ms      10.430us      19.590ms         1.55%      29.718ms      15.724us           0 b           0 b           0 b           0 b          1890  
+                            aten::embedding         0.02%     254.000us         2.17%      27.411ms       9.137ms     206.000us         0.02%      27.422ms       9.141ms           0 b           0 b     450.00 Kb           0 b             3  
+                         aten::index_select         2.14%      27.009ms         2.14%      27.078ms       9.026ms      26.975ms         2.14%      27.095ms       9.032ms           0 b           0 b     450.00 Kb           0 b             3  
+                        aten::empty_strided         0.20%       2.525ms         0.20%       2.525ms      12.438us      20.420ms         1.62%      20.420ms     100.591us           0 b           0 b     414.22 Mb     414.22 Mb           203  
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 1.263s
+Self CUDA time total: 1.263s
+model_inference: CPU time: 1263312.000 ms, CUDA time: 1263264.000 ms
+aten::empty: CPU time: 5364.000 ms, CUDA time: 4941.000 ms
+aten::set_: CPU time: 6550.000 ms, CUDA time: 3174.000 ms
+aten::select: CPU time: 3403.000 ms, CUDA time: 4133.000 ms
+aten::as_strided: CPU time: 102.000 ms, CUDA time: 2333.000 ms
+aten::item: CPU time: 3319.000 ms, CUDA time: 4510.000 ms
+aten::_local_scalar_dense: CPU time: 471.000 ms, CUDA time: 1751.000 ms
+aten::to: CPU time: 69260.000 ms, CUDA time: 71754.000 ms
+aten::lift_fresh: CPU time: 4.000 ms, CUDA time: 1291.000 ms
+aten::view: CPU time: 866.000 ms, CUDA time: 4194.000 ms
+aten::reshape: CPU time: 5003.000 ms, CUDA time: 6455.000 ms
+aten::detach: CPU time: 19712.000 ms, CUDA time: 29718.000 ms
+detach: CPU time: 490.000 ms, CUDA time: 10128.000 ms
+aten::fill_: CPU time: 1764.000 ms, CUDA time: 1834.000 ms
+aten::zero_: CPU time: 23.000 ms, CUDA time: 94.000 ms
+aten::arange: CPU time: 90.000 ms, CUDA time: 94.000 ms
+aten::resize_: CPU time: 36.000 ms, CUDA time: 78.000 ms
+aten::expand: CPU time: 1904.000 ms, CUDA time: 2536.000 ms
+aten::zeros: CPU time: 33.000 ms, CUDA time: 33.000 ms
+aten::copy_: CPU time: 155004.000 ms, CUDA time: 141967.000 ms
+aten::_to_copy: CPU time: 67412.000 ms, CUDA time: 67698.000 ms
+aten::empty_strided: CPU time: 2525.000 ms, CUDA time: 20420.000 ms
+aten::_has_compatible_shallow_copy_type: CPU time: 2.000 ms, CUDA time: 1014.000 ms
+aten::detach_: CPU time: 9.000 ms, CUDA time: 5.000 ms
+detach_: CPU time: 1.000 ms, CUDA time: 2.000 ms
+aten::slice: CPU time: 186.000 ms, CUDA time: 181.000 ms
+aten::index: CPU time: 9407.000 ms, CUDA time: 9665.000 ms
+aten::eq: CPU time: 4263.000 ms, CUDA time: 4102.000 ms
+aten::any: CPU time: 3739.000 ms, CUDA time: 3745.000 ms
+aten::ones: CPU time: 1649.000 ms, CUDA time: 1651.000 ms
+aten::unsqueeze: CPU time: 20.000 ms, CUDA time: 24.000 ms
+aten::rsub: CPU time: 4959.000 ms, CUDA time: 4963.000 ms
+aten::sub: CPU time: 4913.000 ms, CUDA time: 4921.000 ms
+aten::mul: CPU time: 3255.000 ms, CUDA time: 3263.000 ms
+aten::embedding: CPU time: 27411.000 ms, CUDA time: 27422.000 ms
+aten::index_select: CPU time: 27078.000 ms, CUDA time: 27095.000 ms
+aten::add: CPU time: 468.000 ms, CUDA time: 475.000 ms
+aten::add_: CPU time: 33.000 ms, CUDA time: 33.000 ms
+aten::layer_norm: CPU time: 2746.000 ms, CUDA time: 3006.000 ms
+aten::native_layer_norm: CPU time: 2473.000 ms, CUDA time: 2295.000 ms
+aten::dropout: CPU time: 4.000 ms, CUDA time: 205.000 ms
+aten::linear: CPU time: 34852.000 ms, CUDA time: 36180.000 ms
+aten::t: CPU time: 1549.000 ms, CUDA time: 1865.000 ms
+aten::transpose: CPU time: 780.000 ms, CUDA time: 966.000 ms
+aten::addmm: CPU time: 29650.000 ms, CUDA time: 31699.000 ms
+aten::permute: CPU time: 559.000 ms, CUDA time: 618.000 ms
+aten::matmul: CPU time: 3627.000 ms, CUDA time: 3661.000 ms
+aten::_reshape_alias: CPU time: 32.000 ms, CUDA time: 120.000 ms
+aten::bmm: CPU time: 674.000 ms, CUDA time: 843.000 ms
+aten::_unsafe_view: CPU time: 20.000 ms, CUDA time: 54.000 ms
+aten::div: CPU time: 4120.000 ms, CUDA time: 4140.000 ms
+aten::softmax: CPU time: 6525.000 ms, CUDA time: 6582.000 ms
+aten::_softmax: CPU time: 6433.000 ms, CUDA time: 6475.000 ms
+aten::contiguous: CPU time: 612.000 ms, CUDA time: 757.000 ms
+aten::clone: CPU time: 471.000 ms, CUDA time: 682.000 ms
+aten::empty_like: CPU time: 154.000 ms, CUDA time: 317.000 ms
+aten::gelu: CPU time: 2378.000 ms, CUDA time: 2329.000 ms
+aten::tanh: CPU time: 866.000 ms, CUDA time: 871.000 ms
+
+BERT RESULTS FOR fuel.csv
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                       Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg       CPU Mem  Self CPU Mem      CUDA Mem  Self CUDA Mem    # of Calls  
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                            model_inference        98.15%       20.914s       100.00%       21.308s       21.308s       20.850s        97.56%       21.373s       21.373s           0 b    -228.85 Mb           0 b    -459.26 Mb             1  
+                               aten::linear         0.08%      17.645ms         0.39%      82.076ms       1.124ms      17.762ms         0.08%     179.160ms       2.454ms           0 b           0 b      15.82 Mb           0 b            73  
+                                aten::copy_         0.65%     139.514ms         0.65%     139.514ms     336.990us     143.620ms         0.67%     143.620ms     346.908us           0 b           0 b           0 b           0 b           414  
+                                aten::addmm         0.09%      19.555ms         0.17%      35.438ms     485.452us      97.513ms         0.46%     109.197ms       1.496ms           0 b           0 b      15.82 Mb      15.82 Mb            73  
+                                   aten::to         0.01%       2.191ms         0.28%      58.705ms     142.835us       2.743ms         0.01%      57.810ms     140.657us           0 b           0 b     419.61 Mb           0 b           411  
+                             aten::_to_copy         0.02%       4.761ms         0.27%      56.514ms     278.394us       5.203ms         0.02%      55.067ms     271.266us           0 b           0 b     419.61 Mb      20.26 Mb           203  
+                               aten::matmul         0.08%      16.658ms         0.15%      32.682ms       1.362ms       8.444ms         0.04%      42.841ms       1.785ms           0 b           0 b       3.13 Mb           0 b            24  
+                                    aten::t         0.07%      14.604ms         0.07%      15.459ms     211.767us      31.505ms         0.15%      40.307ms     552.151us           0 b           0 b           0 b           0 b            73  
+                               aten::detach         0.11%      24.467ms         0.12%      24.673ms      13.054us      18.289ms         0.09%      32.129ms      16.999us           0 b           0 b           0 b           0 b          1890  
+                           aten::layer_norm         0.00%     294.000us         0.22%      46.537ms       1.861ms      10.707ms         0.05%      31.431ms       1.257ms           0 b           0 b       3.67 Mb     -21.50 Kb            25  
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 21.308s
+Self CUDA time total: 21.373s
+model_inference: CPU time: 21308104.000 ms, CUDA time: 21372730.000 ms
+aten::empty: CPU time: 3648.000 ms, CUDA time: 7299.000 ms
+aten::set_: CPU time: 26678.000 ms, CUDA time: 24732.000 ms
+aten::select: CPU time: 2558.000 ms, CUDA time: 3405.000 ms
+aten::as_strided: CPU time: 124.000 ms, CUDA time: 14053.000 ms
+aten::item: CPU time: 4029.000 ms, CUDA time: 4235.000 ms
+aten::_local_scalar_dense: CPU time: 1880.000 ms, CUDA time: 2168.000 ms
+aten::to: CPU time: 58705.000 ms, CUDA time: 57810.000 ms
+aten::lift_fresh: CPU time: 0.000 ms, CUDA time: 1216.000 ms
+aten::view: CPU time: 696.000 ms, CUDA time: 14779.000 ms
+aten::reshape: CPU time: 16715.000 ms, CUDA time: 26664.000 ms
+aten::detach: CPU time: 24673.000 ms, CUDA time: 32129.000 ms
+detach: CPU time: 206.000 ms, CUDA time: 13840.000 ms
+aten::fill_: CPU time: 80.000 ms, CUDA time: 4599.000 ms
+aten::zero_: CPU time: 12.000 ms, CUDA time: 51.000 ms
+aten::arange: CPU time: 50.000 ms, CUDA time: 55.000 ms
+aten::resize_: CPU time: 10.000 ms, CUDA time: 19.000 ms
+aten::expand: CPU time: 16534.000 ms, CUDA time: 26810.000 ms
+aten::zeros: CPU time: 24.000 ms, CUDA time: 14.000 ms
+aten::copy_: CPU time: 139514.000 ms, CUDA time: 143620.000 ms
+aten::_to_copy: CPU time: 56514.000 ms, CUDA time: 55067.000 ms
+aten::empty_strided: CPU time: 564.000 ms, CUDA time: 1689.000 ms
+aten::_has_compatible_shallow_copy_type: CPU time: 4.000 ms, CUDA time: 1029.000 ms
+aten::detach_: CPU time: 9.000 ms, CUDA time: 10.000 ms
+detach_: CPU time: 2.000 ms, CUDA time: 3.000 ms
+aten::slice: CPU time: 121.000 ms, CUDA time: 381.000 ms
+aten::index: CPU time: 60.000 ms, CUDA time: 288.000 ms
+aten::eq: CPU time: 16.000 ms, CUDA time: 260.000 ms
+aten::any: CPU time: 21.000 ms, CUDA time: 157.000 ms
+aten::ones: CPU time: 32.000 ms, CUDA time: 4487.000 ms
+aten::unsqueeze: CPU time: 19.000 ms, CUDA time: 361.000 ms
+aten::rsub: CPU time: 28.000 ms, CUDA time: 292.000 ms
+aten::sub: CPU time: 16.000 ms, CUDA time: 286.000 ms
+aten::mul: CPU time: 13.000 ms, CUDA time: 125.000 ms
+aten::embedding: CPU time: 200.000 ms, CUDA time: 2665.000 ms
+aten::index_select: CPU time: 90.000 ms, CUDA time: 1967.000 ms
+aten::add: CPU time: 508.000 ms, CUDA time: 5061.000 ms
+aten::add_: CPU time: 9.000 ms, CUDA time: 1141.000 ms
+aten::layer_norm: CPU time: 46537.000 ms, CUDA time: 31431.000 ms
+aten::native_layer_norm: CPU time: 46243.000 ms, CUDA time: 20724.000 ms
+aten::dropout: CPU time: 6.000 ms, CUDA time: 367.000 ms
+aten::linear: CPU time: 82076.000 ms, CUDA time: 179160.000 ms
+aten::t: CPU time: 15459.000 ms, CUDA time: 40307.000 ms
+aten::transpose: CPU time: 983.000 ms, CUDA time: 13695.000 ms
+aten::addmm: CPU time: 35438.000 ms, CUDA time: 109197.000 ms
+aten::permute: CPU time: 598.000 ms, CUDA time: 3921.000 ms
+aten::matmul: CPU time: 32682.000 ms, CUDA time: 42841.000 ms
+aten::_reshape_alias: CPU time: 51.000 ms, CUDA time: 1284.000 ms
+aten::bmm: CPU time: 14725.000 ms, CUDA time: 6069.000 ms
+aten::_unsafe_view: CPU time: 40.000 ms, CUDA time: 2172.000 ms
+aten::div: CPU time: 237.000 ms, CUDA time: 1377.000 ms
+aten::softmax: CPU time: 262.000 ms, CUDA time: 2422.000 ms
+aten::_softmax: CPU time: 137.000 ms, CUDA time: 1266.000 ms
+aten::contiguous: CPU time: 19499.000 ms, CUDA time: 9007.000 ms
+aten::clone: CPU time: 19333.000 ms, CUDA time: 8537.000 ms
+aten::empty_like: CPU time: 14142.000 ms, CUDA time: 3199.000 ms
+aten::gelu: CPU time: 164.000 ms, CUDA time: 1841.000 ms
+aten::tanh: CPU time: 15.000 ms, CUDA time: 121.000 ms
+
+BERT RESULTS FOR netflix_shows.csv
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                       Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg       CPU Mem  Self CPU Mem      CUDA Mem  Self CUDA Mem    # of Calls  
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                            model_inference        71.00%        2.512s       100.00%        3.538s        3.538s        2.442s        68.46%        3.567s        3.567s           0 b    -363.39 Mb           0 b    -459.25 Mb             1  
+                                aten::copy_        14.57%     515.342ms        14.57%     515.342ms       1.245ms     476.930ms        13.37%     476.930ms       1.152ms           0 b           0 b           0 b           0 b           414  
+                                   aten::to         0.05%       1.707ms        11.99%     424.190ms       1.032ms       3.598ms         0.10%     426.965ms       1.039ms           0 b           0 b     419.61 Mb           0 b           411  
+                             aten::_to_copy         0.27%       9.452ms        11.94%     422.483ms       2.081ms      26.941ms         0.76%     423.367ms       2.086ms           0 b           0 b     419.61 Mb           0 b           203  
+                               aten::detach         0.96%      33.994ms         0.99%      34.866ms      18.448us      24.623ms         0.69%     352.065ms     186.278us           0 b           0 b           0 b           0 b          1890  
+                                     detach         0.02%     872.000us         0.02%     872.000us       0.461us     327.442ms         9.18%     327.442ms     173.250us           0 b           0 b           0 b           0 b          1890  
+                               aten::linear         0.53%      18.732ms         2.34%      82.682ms       1.133ms       8.337ms         0.23%      95.119ms       1.303ms           0 b           0 b      15.82 Mb           0 b            73  
+                                 aten::set_         2.36%      83.662ms         2.36%      83.662ms     203.063us      67.917ms         1.90%      67.917ms     164.847us    -420.02 Mb    -420.02 Mb           0 b           0 b           412  
+                                aten::addmm         0.86%      30.518ms         1.29%      45.480ms     623.014us      49.316ms         1.38%      58.008ms     794.630us           0 b           0 b      15.82 Mb      15.82 Mb            73  
+                               aten::matmul         0.05%       1.799ms         0.85%      30.236ms       1.260ms       3.891ms         0.11%      35.111ms       1.463ms           0 b           0 b       3.13 Mb           0 b            24  
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 3.538s
+Self CUDA time total: 3.567s
+model_inference: CPU time: 3537986.000 ms, CUDA time: 3566519.000 ms
+aten::empty: CPU time: 75612.000 ms, CUDA time: 3991.000 ms
+aten::set_: CPU time: 83662.000 ms, CUDA time: 67917.000 ms
+aten::select: CPU time: 60970.000 ms, CUDA time: 3809.000 ms
+aten::as_strided: CPU time: 108.000 ms, CUDA time: 9104.000 ms
+aten::item: CPU time: 39259.000 ms, CUDA time: 4354.000 ms
+aten::_local_scalar_dense: CPU time: 1983.000 ms, CUDA time: 1756.000 ms
+aten::to: CPU time: 424190.000 ms, CUDA time: 426965.000 ms
+aten::lift_fresh: CPU time: 2.000 ms, CUDA time: 1301.000 ms
+aten::view: CPU time: 1934.000 ms, CUDA time: 7925.000 ms
+aten::reshape: CPU time: 86347.000 ms, CUDA time: 26228.000 ms
+aten::detach: CPU time: 34866.000 ms, CUDA time: 352065.000 ms
+detach: CPU time: 872.000 ms, CUDA time: 327442.000 ms
+aten::fill_: CPU time: 550.000 ms, CUDA time: 996.000 ms
+aten::zero_: CPU time: 16.000 ms, CUDA time: 82.000 ms
+aten::arange: CPU time: 54.000 ms, CUDA time: 35.000 ms
+aten::resize_: CPU time: 10.000 ms, CUDA time: 11.000 ms
+aten::expand: CPU time: 15540.000 ms, CUDA time: 20548.000 ms
+aten::zeros: CPU time: 20.000 ms, CUDA time: 17.000 ms
+aten::copy_: CPU time: 515342.000 ms, CUDA time: 476930.000 ms
+aten::_to_copy: CPU time: 422483.000 ms, CUDA time: 423367.000 ms
+aten::empty_strided: CPU time: 653.000 ms, CUDA time: 4419.000 ms
+aten::_has_compatible_shallow_copy_type: CPU time: 2.000 ms, CUDA time: 1241.000 ms
+aten::detach_: CPU time: 9.000 ms, CUDA time: 9.000 ms
+detach_: CPU time: 3.000 ms, CUDA time: 3.000 ms
+aten::slice: CPU time: 90.000 ms, CUDA time: 370.000 ms
+aten::index: CPU time: 55.000 ms, CUDA time: 462.000 ms
+aten::eq: CPU time: 16.000 ms, CUDA time: 10.000 ms
+aten::any: CPU time: 21.000 ms, CUDA time: 19.000 ms
+aten::ones: CPU time: 31.000 ms, CUDA time: 804.000 ms
+aten::unsqueeze: CPU time: 15.000 ms, CUDA time: 383.000 ms
+aten::rsub: CPU time: 65.000 ms, CUDA time: 422.000 ms
+aten::sub: CPU time: 16.000 ms, CUDA time: 416.000 ms
+aten::mul: CPU time: 13.000 ms, CUDA time: 9.000 ms
+aten::embedding: CPU time: 149.000 ms, CUDA time: 1386.000 ms
+aten::index_select: CPU time: 69.000 ms, CUDA time: 702.000 ms
+aten::add: CPU time: 614.000 ms, CUDA time: 2741.000 ms
+aten::add_: CPU time: 8.000 ms, CUDA time: 9.000 ms
+aten::layer_norm: CPU time: 6184.000 ms, CUDA time: 19533.000 ms
+aten::native_layer_norm: CPU time: 1269.000 ms, CUDA time: 10873.000 ms
+aten::dropout: CPU time: 3.000 ms, CUDA time: 102.000 ms
+aten::linear: CPU time: 82682.000 ms, CUDA time: 95119.000 ms
+aten::t: CPU time: 16942.000 ms, CUDA time: 17392.000 ms
+aten::transpose: CPU time: 24808.000 ms, CUDA time: 6121.000 ms
+aten::addmm: CPU time: 45480.000 ms, CUDA time: 58008.000 ms
+aten::permute: CPU time: 451.000 ms, CUDA time: 1641.000 ms
+aten::matmul: CPU time: 30236.000 ms, CUDA time: 35111.000 ms
+aten::_reshape_alias: CPU time: 33.000 ms, CUDA time: 2254.000 ms
+aten::bmm: CPU time: 656.000 ms, CUDA time: 6146.000 ms
+aten::_unsafe_view: CPU time: 23.000 ms, CUDA time: 1776.000 ms
+aten::div: CPU time: 167.000 ms, CUDA time: 482.000 ms
+aten::softmax: CPU time: 308.000 ms, CUDA time: 3253.000 ms
+aten::_softmax: CPU time: 203.000 ms, CUDA time: 835.000 ms
+aten::contiguous: CPU time: 1183.000 ms, CUDA time: 6310.000 ms
+aten::clone: CPU time: 1090.000 ms, CUDA time: 6244.000 ms
+aten::empty_like: CPU time: 180.000 ms, CUDA time: 3881.000 ms
+aten::gelu: CPU time: 136.000 ms, CUDA time: 976.000 ms
+aten::tanh: CPU time: 13.000 ms, CUDA time: 10.000 ms
+
